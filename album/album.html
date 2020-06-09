@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<title>Album</title>
+</head>
+<body>
+	<script>
+		let family = 
+		{
+            "Family" : 
+            [{
+                "Name" : "Fabian",
+                "Relation" : "Brother",
+                "Picture" : "<img src='img/pic1.jpg' width='200px' height='250px'",
+            },
+            {
+                "Name" : "Hans",
+                "Relation" : "Cousin",
+                "Picture" : "<img src='img/pic2.jpg' width='200px' height='250px'",
+            },
+            
+            {
+                "Name" : "Nicolaus",
+                "Relation" : "Grandpa",
+                "Picture" : "<img src='img/pic3.jpg' width='200px' height='250px'",
+            }]   
+		};
+$(document).ready(function(){
+		let i = 0;
+		for(i = 0; i < family.Family.length; i++)
+		{
+			$("body").append("<td>");
+            $("body").append("<br><tr><td><b>Name</b></td><td width=50>" + family.Family[i].Name + "</td></tr>");
+            $("body").append("<br><tr><td><b>Relation</b></td><td width=50>" + family.Family[i].Relation + "</td></tr>");
+            $("body").append("<br><tr><td><b>Picture </b></td><td width=50>" + family.Family[i].Picture + "</td></tr>");
+            $("body").append("</table>");
+            $("body").append("</td>");
+		}
+});
+	</script>
+	
+</body>
+</html>
