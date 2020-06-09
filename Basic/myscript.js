@@ -33,12 +33,7 @@ $("p:first").css("background-color", "silver");
 $("p a").css("background-color", "brown");
 
 // the second li within nested ul element
-$("li ul li").css("background-color", "blue");
-$("li:nth-child(2)").css({ 
-    "background-color": "black"
-  }); 
-
-
+$("li:nth-child(2)").css("background-color", "black"); 
 
 // every second and third p element
 $("p:nth-of-type(2)").css("background-color", "white");
