@@ -34,6 +34,10 @@ $("p a").css("background-color", "brown");
 
 // the second li within nested ul element
 $("li ul li").css("background-color", "blue");
+$("li:nth-child(2)").css({ 
+    "background-color": "black"
+  }); 
+
 
 
 // every second and third p element
